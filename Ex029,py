@@ -1,0 +1,19 @@
+velocidade = int(input('Qual é a velocidade que você está dirigindo: '))
+
+
+limite = 80
+ 
+if velocidade > limite:
+    excesso = velocidade - limite
+    multa = excesso * 7
+
+    if excesso <= 20:
+        print(f'Você sofreu uma infração média tomou 4 pontos em sua carteira')
+    elif 20 < excesso <= 50:
+        print(f'Você sofreu uma infração grave tomou 5 pontos em sua carteira')
+    elif excesso > 50: 
+        print(f'infração gravíssima;7 pontos na carteira e  suspensão da carteira e multa multiplicada')
+    
+    print(f'Sua multa foi no valor de {multa}')
+else:
+    print('Você está no limite da rota')
